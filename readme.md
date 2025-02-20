@@ -4,9 +4,9 @@
 - Instructor: Kevin Cunningham
   - [Email](mailto:kevin@kevincunningham.co.uk)
   - [My website](https://kevincunningham.co.uk)
-- [Repo link](https://github.com/doingandlearning/python-training-dec-2024)
-- [Miro link](https://miro.com/app/board/uXjVL8zGOMI=/)
-- [Feedback link](https://forms.office.com/Pages/ResponsePage.aspx?id=AbRZMmGaBU2-4wYppu4UCXoSNXuLhPlBr2Ax0BBXeilUM1pPSFZJU0NSUktUQ1RZSEcxTFVPMjlYMC4u)
+- [Repo link](https://github.com/doingandlearning/python-edinburgh-feb-2025)
+- [Miro link](https://miro.com/app/board/uXjVIcJGl_g=/)
+- [Feedback link]()
 
 This is an immersive 3-day workshop in Edinburgh, designed to take you from Python fundamentals to building robust APIs with Django.
 
