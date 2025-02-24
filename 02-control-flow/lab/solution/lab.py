@@ -1,7 +1,7 @@
 import random
 
 number_to_guess = random.randint(1, 10)
-
+# NUMBER_TO_GUESS
 count_number_of_tries = 0
 
 max_attempts = 4
