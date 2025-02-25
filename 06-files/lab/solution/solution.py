@@ -1,4 +1,5 @@
 from datetime import datetime
+import csv
 
 print(datetime.now())
 # import datetime
@@ -9,13 +10,12 @@ with open("server.log", "w", newline="\n") as file:
         """2024-12-04 10:23:45,INFO,Service started
 2024-12-04 10:24:05,WARNING,High memory usage
 2024-12-04 10:25:12,ERROR,Service failed
-2024-12-04 10:26:30,INFO,Service restarted
-"""
+2024-12-04 10:26:30,INFO,Service restarted"""
     )
 
 with open("server.log", "a", newline="\n") as file:
     file.write(
-        f"{datetime.now().strftime("%Y-%m-%d %H:%M:%S")},INFO,Logged from function"
+        f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')},INFO,Logged from function"
     )
 
 log_entries = []
@@ -27,6 +27,15 @@ with open("server.log") as log_file:
         )
 
 print(log_entries)
+
+alt_log_entries = []
+with open("server.log") as log_file:
+    reader = csv.reader(log_file)
+    for row in reader:
+        alt_log_entries.append(
+            {"timestamp": row[0], "severity": row[1], "message": row[2]}
+        )
+print(alt_log_entries)
 
 
 def filter_logs_by_severity(log_entries, severity):
