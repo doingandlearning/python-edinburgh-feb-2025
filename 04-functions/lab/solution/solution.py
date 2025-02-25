@@ -71,6 +71,6 @@ def play_game():
 
     print("Game over!")
 
-
-# Run the game
-play_game()
+if __name__ == "__main__":
+    # Run the game
+    play_game()
