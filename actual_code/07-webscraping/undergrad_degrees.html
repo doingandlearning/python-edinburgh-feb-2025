@@ -1,0 +1,409 @@
+
+
+<!DOCTYPE html>
+<html>
+	
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="icon" type="image/png" href="assets/edgel/favicon/favicon-32x32.png">
+<!--[if IE]><link rel="shortcut icon" href="assets/edgel/favicon/favicon.ico"/><![endif]-->
+<link rel="stylesheet" href="assets/edgel/css/edgel-red.min.css" media="all" />
+<link rel="stylesheet" href="assets/custom.css" media="all" />
+<script src="assets/jquery.min.js"></script>
+<script src="assets/edgel/js/edgel.min.js"></script>
+<script src="assets/edgel/js/edgel-cookie.min.js"></script>
+<script src="assets/script.js"></script>
+<script>
+    // Standard GTM loading script copied from EdWeb 2.
+    const uoe_gtm_necessary_container_ids = ["GTM-NFKJG5GC","GTM-W53MQQV4"];
+    const uoe_gtm_advertising_container_ids = ["GTM-TFH7FXR","GTM-WHQZZ56","GTM-P8ZBCXN"];
+    const uoe_gtm_performance_container_ids = ["GTM-K98J2SB","GTM-TQN45VX","GTM-5P5K4D2"];
+    // Necessary containers are always active.
+    uoe_gtm_necessary_container_ids.forEach(function(container_id) {
+      create_gtm_script_tag(container_id, 'necessary');
+    });
+    init_gtm();
+    document.addEventListener('changed.uoe.consent', function (event) {
+      switch (event.allowedList) {
+      case 'advertising,necessary,performance':
+        uoe_gtm_advertising_container_ids.forEach(function(container_id) {
+          create_gtm_script_tag(container_id, 'advertising');
+        });
+        uoe_gtm_performance_container_ids.forEach(function(container_id) {
+          create_gtm_script_tag(container_id, 'performance');
+        });
+        break
+      case 'necessary,performance':
+        uoe_gtm_advertising_container_ids.forEach(function(container_id) {
+          create_gtm_script_tag(container_id, 'performance');
+        });
+        break
+      case 'advertising,necessary':
+        uoe_gtm_performance_container_ids.forEach(function(container_id) {
+          create_gtm_script_tag(container_id, 'advertising');
+        });
+        break
+      }
+    })
+    function create_gtm_script_tag(container_id, container_name) {
+      var f = document.getElementsByTagName('script')[0];
+      var j = document.createElement('script');
+      j.async = true;
+      j.className = 'uoe-edgel-gtm-container-script';
+      j.id = 'uoe_edgel_gtm_' + container_name + '_' + container_id;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + container_id;
+      f.parentNode.insertBefore(j, f);
+      init_gtm();
+    }
+    function init_gtm() {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+    }
+</script>
+	<meta name="description" content="Invest in an education that will help you build a successful future: find your undergraduate degree at the University of Edinburgh." />
+	<meta name="keywords" content="undergrad,ug,undergraduate,study,degree,search,finder,list,subjects,programme,course,edinburgh, prospectus,2025" />
+	<title>Degree finder</title>
+</head>
+
+<body>
+<div id="skip-link">
+    <a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
+</div>
+
+<nav class="navbar navbar-default" role="navigation" aria-label="Section navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle"
+                    data-toggle="collapse" data-target="#uoe-navbar-collapse"
+                    aria-controls="uoe-navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle section links</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="uoe-navbar-collapse">
+            <ul class="menu nav navbar-nav"><li class="first leaf"><a href="https://www.ed.ac.uk/studying" title="">Study</a></li>
+                <li class="leaf"><a href="https://www.ed.ac.uk/global" title="">Global</a></li>
+                <li class="leaf"><a href="https://www.ed.ac.uk/visit" title="">Visit</a></li>
+                <li class="leaf"><a href="https://www.ed.ac.uk/research" title="">Research</a></li>
+                <li class="leaf"><a href="https://www.ed.ac.uk/news" title="">News</a></li>
+                <li class="leaf"><a href="https://www.ed.ac.uk/about" title="">About</a></li>
+                <li class="leaf"><a href="https://www.ed.ac.uk/alumni" title="">Alumni</a></li>
+                <li class="leaf"><a href="https://www.ed.ac.uk/local" title="">Local</a></li>
+                <li class="leaf"><a href="https://www.ed.ac.uk/staff" title="">Staff</a></li>
+                <li class="last leaf"><a href="https://www.ed.ac.uk/students" title="">Students</a></li>
+            </ul>                  </div>
+
+    </div>
+</nav>
+
+<div class="page-head">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 col-md-8">
+                <a href="https://www.ed.ac.uk"><img class="uoe-logo" src="assets/edgel/images/logo.png" alt="The University of Edinburgh home" /></a>
+            </div>
+            <div class="col-sm-5 col-md-4">
+                <div class="page-head-text">
+                    <ul class="list-inline text-right">
+                        <li><a href="https://www.ed.ac.uk/schools-departments/">Schools &amp; departments</a></li>
+                        <li><a href="https://www.myed.ed.ac.uk/">MyEd</a></li>
+                    </ul>
+                </div>
+                <div role="search" class="page-head-search">
+                    <form action="https://search.ed.ac.uk/" method="get"><div class="form-group">
+                            <label for="uoe-search" class="sr-only">Search: </label>
+                            <div class="input-group">
+                                <input id="uoe-search" type="search" placeholder="Search" class="form-control form-control-page-head" data-items="4" data-provide="uoe-search" name="q">
+                                <span class="input-group-btn">
+  <button class="btn btn-page-head">
+    <span class="glyphicon glyphicon-search" aria-hidden="true"></span><span class="sr-only">Search</span>
+  </button>
+</span>
+                            </div>
+                        </div></form>        </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="page-head-hero">
+    <a href="index.php">
+        <picture>
+            <img src="images/banner.png" alt="">
+        </picture>
+        <div class="container container-page-head-brand">
+            <div class="row">
+                <div class="col-xs-4 col-xs-offset-8 col-sm-3 col-sm-offset-9 col-lg-2 col-lg-offset-10">
+                    <div class="page-head-brand">
+                        <picture>
+                            <img src="images/brand.png" alt="Edinburgh: Extraordinary futures await.">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+    <div class="container">
+        <div class="page-head-title">
+            <div class="h2">
+                <a href="https://edin.ac/study-ug-2025">
+                    Undergraduate study - 2025 entry
+                </a>
+            </div>
+            <div class="h1">
+                <a href="index.php">
+                    Degree finder
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container container-page-content">
+                
+  <div class="row breadtrail">
+    <div class="col-sm-9 col-md-10" itemprop="breadcrumb">
+        <nav aria-label="Breadcrumbs">
+            <ol class="breadcrumb">
+                <li><a href="https://www.ed.ac.uk/">Home</a></li>
+                <li><a href="https://www.ed.ac.uk/studying">Study</a></li>
+                <li><a href="https://www.ed.ac.uk/studying/undergraduate">Undergraduate study</a></li>
+                                <li>Degree finder</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="col-sm-3 col-md-2">
+      <a href="https://www.ed.ac.uk/studying/undergraduate/contact" class="btn btn-uoe btn-block contact-link">Contact us</a>
+    </div>
+</div>
+
+                        <a id="main-content" tabindex="-1"></a>
+            <main>
+	<h1 class="page-header">Degrees by subject</h1>
+
+	<div class="row">
+    	<div id="leftContent" class="col-md-8">
+    		<div class="row">
+    			<div id="leftSubjects" class="col-md-6"><div class="list-group"><a class="list-group-item" href="index.php?action=subject&amp;code=24" title="Look up subject: Accounting"><span class="badge pull-right">2</span> Accounting</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=28" title="Look up subject: Arabic and Persian"><span class="badge pull-right">13</span> Arabic and Persian</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=30" title="Look up subject: Archaeology"><span class="badge pull-right">4</span> Archaeology</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=16" title="Look up subject: Architecture and Architectural History &amp; Heritage"><span class="badge pull-right">4</span> Architecture and Architectural History &amp; Heritage</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=58" title="Look up subject: Art"><span class="badge pull-right">2</span> Art</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=63" title="Look up subject: Biological Sciences"><span class="badge pull-right">15</span> Biological Sciences</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=1" title="Look up subject: Biomedical Sciences"><span class="badge pull-right">7</span> Biomedical Sciences</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=12" title="Look up subject: Business"><span class="badge pull-right">16</span> Business</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=31" title="Look up subject: Celtic"><span class="badge pull-right">9</span> Celtic</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=3" title="Look up subject: Chemistry"><span class="badge pull-right">6</span> Chemistry</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=27" title="Look up subject: Chinese"><span class="badge pull-right">7</span> Chinese</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=34" title="Look up subject: Classics"><span class="badge pull-right">13</span> Classics</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=60" title="Look up subject: Cognitive Science (Humanities)"><span class="badge pull-right">1</span> Cognitive Science (Humanities)</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=9" title="Look up subject: Computer Science (Informatics)"><span class="badge pull-right">9</span> Computer Science (Informatics)</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=59" title="Look up subject: Design"><span class="badge pull-right">9</span> Design</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=7" title="Look up subject: Earth Sciences and Environment"><span class="badge pull-right">14</span> Earth Sciences and Environment</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=2" title="Look up subject: Ecological and Environmental Sciences"><span class="badge pull-right">2</span> Ecological and Environmental Sciences</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=17" title="Look up subject: Economics"><span class="badge pull-right">7</span> Economics</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=14" title="Look up subject: Education"><span class="badge pull-right">5</span> Education</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=11" title="Look up subject: Engineering"><span class="badge pull-right">17</span> Engineering</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=43" title="Look up subject: English Language"><span class="badge pull-right">2</span> English Language</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=32" title="Look up subject: English Literature and Scottish Literature"><span class="badge pull-right">8</span> English Literature and Scottish Literature</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=44" title="Look up subject: French and Francophone Studies"><span class="badge pull-right">17</span> French and Francophone Studies</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=8" title="Look up subject: Geography"><span class="badge pull-right">2</span> Geography</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=45" title="Look up subject: German"><span class="badge pull-right">15</span> German</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=67" title="Look up subject: HCP-Med"><span class="badge pull-right">1</span> HCP-Med</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=62" title="Look up subject: Health in Social Science"><span class="badge pull-right">1</span> Health in Social Science</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=29" title="Look up subject: History"><span class="badge pull-right">7</span> History</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=37" title="Look up subject: History of Art"><span class="badge pull-right">6</span> History of Art</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=65" title="Look up subject: Integrative Biomedical Sciences (based in China)"><span class="badge pull-right">2</span> Integrative Biomedical Sciences (based in China)</a>
+</div></div><div id="rightSubjects" class="col-md-6"><div class="list-group"><a class="list-group-item" href="index.php?action=subject&amp;code=66" title="Look up subject: Interdisciplinary Studies"><span class="badge pull-right">1</span> Interdisciplinary Studies</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=52" title="Look up subject: Islamic Studies and Middle Eastern Studies"><span class="badge pull-right">2</span> Islamic Studies and Middle Eastern Studies</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=47" title="Look up subject: Italian"><span class="badge pull-right">10</span> Italian</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=38" title="Look up subject: Japanese"><span class="badge pull-right">2</span> Japanese</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=61" title="Look up subject: Landscape Architecture"><span class="badge pull-right">1</span> Landscape Architecture</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=23" title="Look up subject: Law"><span class="badge pull-right">15</span> Law</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=15" title="Look up subject: Linguistics"><span class="badge pull-right">3</span> Linguistics</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=6" title="Look up subject: Mathematics"><span class="badge pull-right">9</span> Mathematics</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=53" title="Look up subject: Medical Sciences"><span class="badge pull-right">1</span> Medical Sciences</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=40" title="Look up subject: Medicine"><span class="badge pull-right">1</span> Medicine</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=5" title="Look up subject: Music"><span class="badge pull-right">2</span> Music</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=13" title="Look up subject: Nursing Studies"><span class="badge pull-right">1</span> Nursing Studies</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=35" title="Look up subject: Philosophy"><span class="badge pull-right">10</span> Philosophy</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=4" title="Look up subject: Physics and Astronomy"><span class="badge pull-right">13</span> Physics and Astronomy</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=18" title="Look up subject: Politics and International Relations"><span class="badge pull-right">5</span> Politics and International Relations</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=10" title="Look up subject: Psychology"><span class="badge pull-right">4</span> Psychology</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=48" title="Look up subject: Russian Studies"><span class="badge pull-right">12</span> Russian Studies</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=49" title="Look up subject: Scandinavian Studies"><span class="badge pull-right">10</span> Scandinavian Studies</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=50" title="Look up subject: Scottish Ethnology"><span class="badge pull-right">7</span> Scottish Ethnology</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=55" title="Look up subject: Scottish Studies"><span class="badge pull-right">1</span> Scottish Studies</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=21" title="Look up subject: Social Anthropology"><span class="badge pull-right">4</span> Social Anthropology</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=22" title="Look up subject: Social Policy"><span class="badge pull-right">7</span> Social Policy</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=20" title="Look up subject: Social Work"><span class="badge pull-right">1</span> Social Work</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=19" title="Look up subject: Sociology"><span class="badge pull-right">5</span> Sociology</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=46" title="Look up subject: Spanish, Portuguese and Latin American Studies"><span class="badge pull-right">16</span> Spanish, Portuguese and Latin American Studies</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=42" title="Look up subject: Sport"><span class="badge pull-right">2</span> Sport</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=54" title="Look up subject: Sustainability"><span class="badge pull-right">1</span> Sustainability</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=36" title="Look up subject: Theology and Religious Studies"><span class="badge pull-right">8</span> Theology and Religious Studies</a>
+<a class="list-group-item" href="index.php?action=subject&amp;code=41" title="Look up subject: Veterinary Medicine"><span class="badge pull-right">2</span> Veterinary Medicine</a>
+</div></div>    		</div>
+
+    	</div>
+
+    	<div id="rightContent" class="col-md-4">
+    		
+    		<div class="row" id="searchBlock">
+    			<div class="col-xs-12">
+    				
+<h2>Search the degree finder</h2>
+
+<form action="index.php" method="get" class="finder-search" id="pgSearch_md">
+  <input type="hidden" name="action" value="search" />
+  <div class="row">
+    <div class="col-xs-12">
+      <label for="proxy_search" class="sr-only">Search: </label>
+      <div class="input-group">
+        <input type="text" class="form-control input-lg" value="" name="searchString" id="proxy_search" placeholder="Search" />
+        <span class="input-group-btn">
+          <button class="btn btn-lg btn-uoe" type="submit" id="search_submit"><span class="glyphicon glyphicon-search"></span><span class="sr-only">Search</span></button>
+        </span>
+      </div>
+    </div>
+  </div>
+ </form>
+    			</div>
+    		</div>
+
+    		<div class="row" id="azLinkBlock">
+    			<div class="col-xs-12">
+    				<a href="index.php?action=degreeList">A-Z of degrees</a>
+    			</div>
+    		</div>
+
+    		<div class="row" id="browseBySchoolBlock">
+    			<div class="col-xs-12">
+    				
+<h2>Degrees by school</h2>
+
+	
+	<h3>Arts, Humanities & Social Sciences</h3>
+
+	<form action="index.php" class="finder-search">
+		<input type="hidden" name="action" value="search" /><input type="hidden" name="college" value="HSS" /><label for="list_HSS">List by school</label><div class="input-group"><select name="school" class="form-control input-lg" id="list_HSS"><option value="0">-- all --</option><option value="434">Business School</option><option value="427">Divinity</option><option value="422">Economics</option><option value="415">Edinburgh College of Art</option><option value="435">Edinburgh Futures Institute</option><option value="420">Education and Sport, The Moray House School of</option><option value="419">Health in Social Science</option><option value="425">History, Classics and Archaeology</option><option value="426">Law</option><option value="424">Literatures, Languages and Cultures</option><option value="421">Philosophy, Psychology and Language Sciences</option><option value="423">Social and Political Science</option></select><span class="input-group-btn"><input type="submit" value="Browse" class="btn btn-uoe btn-lg" /></span></div>	</form>
+
+	
+	<h3>Medicine and Veterinary Medicine</h3>
+
+	<form action="index.php" class="finder-search">
+		<input type="hidden" name="action" value="subject" /><input type="hidden" name="college" value="MVM" /><label for="list_MVM">List by subject</label><div class="input-group"><select name="code" class="form-control input-lg" id="list_MVM"><option value="0">-- all --</option><option value="1">Biomedical Sciences</option><option value="67">HCP-Med</option><option value="65">Integrative Biomedical Sciences (based in China)</option><option value="53">Medical Sciences</option><option value="40">Medicine</option><option value="41">Veterinary Medicine</option></select><span class="input-group-btn"><input type="submit" value="Browse" class="btn btn-uoe btn-lg" /></span></div>	</form>
+
+	
+	<h3>Science and Engineering</h3>
+
+	<form action="index.php" class="finder-search">
+		<input type="hidden" name="action" value="search" /><input type="hidden" name="college" value="SCE" /><label for="list_SCE">List by school</label><div class="input-group"><select name="school" class="form-control input-lg" id="list_SCE"><option value="0">-- all --</option><option value="411">Biological Sciences</option><option value="413">Chemistry</option><option value="418">Engineering</option><option value="412">GeoSciences</option><option value="417">Informatics</option><option value="416">Mathematics</option><option value="414">Physics and Astronomy</option></select><span class="input-group-btn"><input type="submit" value="Browse" class="btn btn-uoe btn-lg" /></span></div>	</form>
+
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <div class="row" id="termsAndConditionsBlock">
+		<div class="col-xs-12">
+			<h2>Terms and conditions</h2>
+			<a href="http://www.edin.ac/terms">All information published according to our terms and conditions</a>		
+		</div>
+	</div>
+</main>
+
+</div></div></div>
+
+
+<footer>
+
+    <div class="footer-subsite-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <p><a href="https://edin.ac/privacy-applicants">Privacy statement for applicants</a></p>
+                    <p><a href="https://edin.ac/terms">Terms and conditions of admission</a></p>
+                    <p><a href="https://edin.ac/admissions-policies">Admissions policies and procedures</a></p>
+                    <p>&nbsp;</p>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <p><a class="btn btn-lg btn-uoe" href="https://edin.ac/study-ug-improve-services" title="Get paid to provide feedback">Help improve our services</a></p>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <a href="https://edin.ac/study-ug-contact" class="btn btn-uoe btn-sm">Contact us <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-discover">
+        <div class="container">
+            <h3>The University of Edinburgh</h3>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-4">
+                    <ul>
+                        <li><a href="https://www.ed.ac.uk/about/website/website-terms-conditions">Terms &amp; conditions</a></li>
+                        <li>
+                            <a href="https://www.ed.ac.uk/about/website/privacy">Privacy &amp; cookies</a>
+                        </li>
+                        <li><a href="https://www.ed.ac.uk/university-secretary-group/complaint-handling-procedure">Complaints procedure</a></li>
+                        <li><a href="https://www.ed.ac.uk/sustainability/modern-slavery-statement">Modern slavery</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-4">
+                    <ul>
+                        <li>
+                            <a href="https://www.ed.ac.uk/about/website/accessibility">Website accessibility</a>
+                        </li>
+                        <li><a href="https://www.ed.ac.uk/about/website/freedom-information">Freedom of information publication scheme</a></li>
+                        <li><a href="https://www.ed.ac.uk/data-protection">Data Protection</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <a href="https://www.ed.ac.uk/about/mission-governance/affiliations">
+                        <img class="pull-right img-responsive" alt="University affiliations" src="assets/edgel/images/footer-affiliations.png"/>
+                    </a>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-sm-push-8 text-right">
+                    <a class="btn btn-uoe btn-sm" href="https://www.myed.ed.ac.uk/"> MyEd login <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                </div>
+                <div class="col-sm-8 col-sm-pull-4">
+                    <p>
+                        The University of Edinburgh is a charitable body, registered in Scotland, with registration number
+                        SC005336, VAT Registration Number GB&nbsp;592&nbsp;9507&nbsp;00, and is acknowledged by the UK authorities as a
+                        &ldquo;<a href="https://www.gov.uk/guidance/recognised-uk-degrees">Recognised body</a>&rdquo; which has been
+                        granted degree awarding powers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container container-footer-copyright">
+        <div class="copyright">
+            <p>Unless explicitly stated otherwise, all material is copyright &copy; The University of Edinburgh 2025.</p>
+        </div>
+    </div>
+
+</footer>
+</body>
+	<!-- ugpros (2025) -->
+</html>
