@@ -1,4 +1,10 @@
-def print_division_result():
+def print_division_result():  # throws IOError
+    """
+    Throws:
+        IOError: IF ...     
+    Returns:
+
+    """
     try:
         num1 = int(input("Give me the first number: "))
         num2 = int(input("Give me the second number: "))
