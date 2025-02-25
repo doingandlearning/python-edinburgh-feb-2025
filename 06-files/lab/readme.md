@@ -44,8 +44,8 @@ Write a Python script to:
 log_entries = []
 with open("server.log", "r") as log_file:
     for line in log_file:
-        timestamp, severity, message = line.strip().split(",")
-        log_entries.append({"timestamp": timestamp, "severity": severity, "message": message})
+        result = line.strip().split(",")
+        log_entries.append({"timestamp": result[0], "severity": result[1], "message": result[2]})
 ```
 
 #### Step 3: Filter Logs by Severity
