@@ -1,7 +1,7 @@
 # Getting setup 
 
 ```bash
-django-admin startapp edinburgh
+django-admin startproject edinburgh
 cd edinburgh
 python manage.py migrate
 python manage.py createsuperuser
