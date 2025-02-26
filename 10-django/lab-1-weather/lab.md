@@ -1,9 +1,6 @@
 ### **Lab: Create an Endpoint That Fetches Weather Data and Returns JSON**
 
 ## TODO: DELETE AFTER COURSE
-0de6bc7ec1efaff74b56d2bab3b38f6e
-
-
 New api key: da894eed522f9202bf0116e454c7d447
 #### **Objective**
 
