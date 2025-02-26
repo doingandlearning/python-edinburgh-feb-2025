@@ -17,9 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from blog.urls import urlpatterns as blog_urls
+from restapi.views import drf_view
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("drf-view/", drf_view, name="drf_view")
 ]
 
 urlpatterns += blog_urls
