@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/dev/ref/settings/
 
 from pathlib import Path
 
+from django.conf.global_settings import INTERNAL_IPS
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -41,12 +43,11 @@ INSTALLED_APPS = [
 
     # third party
     "rest_framework",
-
+    "debug_toolbar",
+    "silk",
     # our own
     "blog",
     "restapi",
-
-
 ]
 
 MIDDLEWARE = [
@@ -57,6 +58,12 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
+    "silk.middleware.SilkyMiddleware",
+]
+
+INTERNAL_IPS = [
+    '127.0.0.1'
 ]
 
 ROOT_URLCONF = "edinburghuni.urls"
@@ -77,6 +84,32 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "edinburghuni.wsgi.application"
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "handlers": {
+        "file": {
+            "level": "INFO",
+            "class": "logging.FileHandler",
+            "filename": "logfile.log",
+            "formatter": "verbose"
+        }
+    },
+    "formatters": {
+        "verbose": {
+            "format": "{levelname} {asctime} {module} {message}",
+            "style": "{"
+        }
+    },
+    "loggers": {
+        "edinburgh": {
+            "handlers": ["file"],
+            "level": "INFO",
+            "propagate": True
+        }
+    }
+}
 
 
 # Database
@@ -130,3 +163,9 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/dev/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+
+### SILK SETTINGS
+SILKY_INTERCEPT_PERCENTAGE = 5
+SILKY_MAX_REQUEST_BODY_SIZE = 1024
+SILKY_MAX_RESPONSE_BODY_SIZE = 1024

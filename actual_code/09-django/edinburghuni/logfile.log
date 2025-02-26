@@ -1,0 +1,6 @@
+INFO 2025-02-26 15:34:17,653 views <WSGIRequest: GET '/api/hello'>
+INFO 2025-02-26 15:43:18,033 views <WSGIRequest: GET '/api/hello'>
+INFO 2025-02-26 15:48:00,713 views <WSGIRequest: GET '/api/hello'>
+INFO 2025-02-26 15:48:02,112 views <WSGIRequest: GET '/api/hello'>
+INFO 2025-02-26 15:48:03,179 views <WSGIRequest: GET '/api/hello'>
+INFO 2025-02-26 15:48:03,735 views <WSGIRequest: GET '/api/hello'>

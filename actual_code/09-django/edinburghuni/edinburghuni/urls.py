@@ -15,14 +15,16 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from blog.urls import urlpatterns as blog_urls
 from restapi.views import drf_view
 from restapi.urls import recipe_urls
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("drf-view/", drf_view, name="drf_view")
+    path("drf-view/", drf_view, name="drf_view"),
+    path("__debug__/", include("debug_toolbar.urls")),
+    path("silk/", include("silk.urls"))
 ]
 
 urlpatterns += blog_urls
