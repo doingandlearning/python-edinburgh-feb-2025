@@ -28,5 +28,5 @@ python manage.py runserver
 ## Create a new app
 
 ```bash
-python manage.py startapp
+python manage.py startapp <name_of_app>
 ```
