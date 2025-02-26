@@ -1,7 +1,7 @@
 ### **Lab: Create an Endpoint That Fetches Weather Data and Returns JSON**
 
 ## TODO: DELETE AFTER COURSE
-New api key: da894eed522f9202bf0116e454c7d447
+New new api key: 3da9175487028b069ce2f8fb7475d98e
 #### **Objective**
 
 Extend the basic "Hello World" API to fetch real-time weather data from a public API (e.g., OpenWeatherMap) and return the data as JSON. This lab helps students practice:
