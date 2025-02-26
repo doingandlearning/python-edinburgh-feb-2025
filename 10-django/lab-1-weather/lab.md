@@ -3,6 +3,8 @@
 ## TODO: DELETE AFTER COURSE
 0de6bc7ec1efaff74b56d2bab3b38f6e
 
+
+New api key: da894eed522f9202bf0116e454c7d447
 #### **Objective**
 
 Extend the basic "Hello World" API to fetch real-time weather data from a public API (e.g., OpenWeatherMap) and return the data as JSON. This lab helps students practice:
