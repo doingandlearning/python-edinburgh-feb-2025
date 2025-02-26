@@ -4,6 +4,10 @@ from rest_framework.renderers import JSONRenderer
 from rest_framework.response import Response
 import json
 
+from rest_framework.viewsets import ModelViewSet
+from .models import Recipe
+from .serializers import RecipeSerializer
+
 # Create your views here.
 
 @api_view(["GET", "POST"])
@@ -13,3 +17,7 @@ def drf_view(request):
         return Response({"message": "Hello for DRF!"})
     else:
         return Response({"data": json.loads(request.body)})
+
+class RecipeViewSet(ModelViewSet):
+    queryset = Recipe.objects.all()
+    serializer_class = RecipeSerializer
